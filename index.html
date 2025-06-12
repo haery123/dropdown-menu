@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with dropdown menu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <!-- Sidebar header with logo and toggle button -->
+       <header class="sidebar-header">
+        <a href="#" class="header-logo">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        <button class="sidebar-toggler">
+            <span class="material-symbols-rounded">
+                chevron_left
+                </span>
+        
+        </button>
+      
+
+       </header>
+
+
+       <nav class="sidebar-nav">
+        <ul class="nav-list primary-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <span class="material-symbols-rounded">
+                        dashboard
+                        </span>
+                        <span class="nav-label">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <span class="material-symbols-rounded">
+                        Home
+                        </span>
+                        <span class="nav-label">Home</span>
+                </a>
+            </li>
+            <!--dropdown-->
+            <li class="nav-item dropdown-container">
+                <a href="#" class="nav-link dropdown-toggle">
+
+                    <span class="material-symbols-rounded">
+                        calendar_today
+                        </span>
+                        <span class="nav-label">Services</span>
+                        <span class="dropdown-icon material-symbols-rounded">
+                            keyboard_arrow_down
+                            </span>
+                </a>
+                <!--dropdown menu-->
+                <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-link">IT Consulting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-link">Cloud Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-link">Mobile Apps</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <span class="material-symbols-rounded">
+                        notifications
+                        </span>
+                        <span class="nav-label">Notifications</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <span class="material-symbols-rounded">
+                        settings
+                        </span>
+                        <span class="nav-label">Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <span class="material-symbols-rounded">
+                        contacts
+                        </span>
+                        <span class="nav-label">Contacts</span>
+                </a>
+            </li>
+            
+        </ul>
+
+        <!--secondary  butons -->
+        <ul class="nav-list secondary-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <span class="material-symbols-rounded">
+                        help
+                        </span>
+                        <span class="nav-label">Help</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <span class="material-symbols-rounded">
+                        feedback
+                        </span>
+                        <span class="nav-label">Feedback</span>
+                </a>
+            </li>
+            
+           
+          
+        </ul>
+       </nav>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
